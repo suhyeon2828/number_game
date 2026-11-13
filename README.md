@@ -8,8 +8,8 @@ python number_main.py
 ```
 
 ## 기능
--1~100 사이 정답을 UP/DOWN 힌트로 맞히기
--최고기록(가장 적은 시도)을 best.txt 에 저장
+- 1~100 사이 정답을 UP/DOWN 힌트로 맞히기
+- 최고기록(가장 적은 시도)을 best.txt 에 저장
 
 **만든사람** : student01
 *기울임*
