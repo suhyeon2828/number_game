@@ -14,4 +14,4 @@ python number_main.py
 **만든사람** : student01
 *기울임*
 ***굵은 기울임***
---취소--
+~~취소~~
