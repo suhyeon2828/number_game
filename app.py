@@ -30,13 +30,13 @@ if st.button('확인', disabled=st.session_state.done):
         st.session_state.msg = f'{guess} → UP! ⬆'
     elif guess > answer:
         st.session_state.msg = f'{guess} → DOWN! ⬇'
-else:
-    tries = st.session_state.tries
-    st.session_state.msg = f'정답! {tries}번만에맞혔습니다.'
-    st.session_state.done= True
-    if best == 0 or tries < best:
-        save_best('best.txt', tries)
-        st.session_state.msg += ' 🎉최고기록갱신!'
+    else:
+        tries = st.session_state.tries
+        st.session_state.msg = f'정답! {tries}번만에맞혔습니다.'
+        st.session_state.done= True
+        if best == 0 or tries < best:
+            save_best('best.txt', tries)
+            st.session_state.msg += ' 🎉최고기록갱신!'
     st.rerun()
 
 # ⑤결과보여주기
@@ -47,4 +47,3 @@ if st.session_state.done:
     if st.button('새게임'):
         new_game()
         st.rerun()
-        
